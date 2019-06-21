@@ -10,3 +10,6 @@ RUN dpkg -i packages-microsoft-prod.deb
 RUN rm -rf packages-microsoft-prod.deb
 RUN apt update
 RUN apt install -y dotnet-sdk-2.2
+
+RUN python2 -m pip install -U pip setuptools
+RUN python3 -m pip install -U pip setuptools
